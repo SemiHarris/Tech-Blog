@@ -3,6 +3,7 @@
 }
 
 header {
+    display: flex;
     width: 100%;
     background-color: rgba(35,16,16,255);
     display: flex;
@@ -21,8 +22,16 @@ a {
 }
 
 body {
-    display: flex;
     padding: 0px;
     margin: 0;
     background-color: rgba(217,234,211,255);
+}
+
+.wrapper {
+    display: flex;
+   width: 100%;
+}
+
+.login-form, .signup-form {
+    margin: auto;
 }
