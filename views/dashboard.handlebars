@@ -1,11 +1,13 @@
 <article class="post">
  {{#each posts as |post|}}
   <div class="title">
-    <a href="/editPost">{{post.title}}</a>
-    <span>({{post.text}})</span>
+    <a href="{{post.post_url}}" target="_blank">{{post.title}}</a>
+    <span>({{post.post_url}})</span>
   </div>
   <div class="meta">
     <a href="/post/{{post.id}}">{{post.comments.length}} comment(s)</a>
   </div>
   {{/each}}
 </article>
+
+<button id="addPost" class="btn-no-style">Add Post</button>
