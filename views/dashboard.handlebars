@@ -1,13 +1,32 @@
-<article class="post">
- {{#each posts as |post|}}
-  <div class="title">
-    <a href="{{post.post_url}}" target="_blank">{{post.title}}</a>
-    <span>({{post.post_url}})</span>
-  </div>
-  <div class="meta">
-    <a href="/post/{{post.id}}">{{post.comments.length}} comment(s)</a>
-  </div>
-  {{/each}}
-</article>
+<section>
+  <h2>Create New Post</h2>
 
-<button id="addPost" class="btn-no-style">Add Post</button>
+  <form class="new-post-form">
+    <div>
+      <label for="post-title">Title</label>
+      <input type="text" id="post-title" name="post-title" />
+    </div>
+    <div>
+      <label for="post-text">Text</label>
+      <input id="post-text" name="post-text" />
+    </div>
+    <button type="submit" class="btn">Create</button>
+  </form>
+</section>
+
+
+{{#if posts.length}}
+<section>
+  <h2>Your Posts</h2>
+  <ol>
+    {{#each posts as |post|}}
+    <li>
+      {{> post-info post}}
+    </li>
+    {{/each}}
+  </ol>
+</section>
+{{/if}}
+
+
+<script src="/javascript/addPost.js"></script>

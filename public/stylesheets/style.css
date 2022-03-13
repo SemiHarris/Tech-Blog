@@ -35,3 +35,80 @@ body {
 .login-form, .signup-form {
     margin: auto;
 }
+
+.post, .comment, .comment-form{
+    margin-bottom: 2%;
+    line-height: 150%;
+    width: 100%;
+    min-height: 100%;
+    max-width: 1200px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(35,16,16,.7);
+}
+  
+ul, ol{
+    list-style-type: none;
+}
+
+ol {
+    padding: 0;
+}
+
+.comment:nth-child(odd) {
+    background-color: #fff5eb;
+}
+
+.comment {
+    margin-top: 0px;
+    margin-bottom: 0;
+}
+
+.comment-form {
+    background-color: rgba(217,234,211,255);
+}
+
+textarea {
+    min-width: 40%;
+    min-height: 100px;
+  }
+
+section {
+    margin-bottom: 2%;
+    line-height: 150%;
+    width: 100%;
+    min-height: 100%;
+    max-width: 1200px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+  .btn-no-style {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    text-decoration: none;
+    color: #225ca3;
+    font-size: 100%;
+    font-weight: bold;
+    transition: color .1s;
+    margin-right: 20px;
+  }
+article {
+    margin-bottom: 2%;
+    line-height: 150%;
+    width: 100%;
+    min-height: 100%;
+    max-width: 1200px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+h3 {
+    margin: 0;
+    margin-top: 15px;
+}
